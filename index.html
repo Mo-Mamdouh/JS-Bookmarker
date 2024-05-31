@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="images/bookmark.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <div>
+            <div class="container">
+                <div class="text-center my-5 d-flex justify-content-center align-items-center">
+                    <h1 class="py-2 position-relative">Bookmarker</h1>
+                </div>
+                <div class="break"></div>
+                <div class="my-4 d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-center colorful">
+                        <i class="fa fa-bookmark fs-3" style="color: green;"></i>
+                        <h4 class="px-1">Bookmark your favorite sites</h4>
+                        <i class="fa fa-bookmark fs-3" style="color: #abab4a;"></i>
+                    </div>
+                  
+                </div>
+                <div class="d-flex justify-content-center align-items-center flex-column my-3">
+                    <div class="mb-4 col-12">
+                        <label for="siteName" class="form-label fw-bold"><i class="fa fa-book-bookmark px-2"></i> Site Name</label>
+                        <input type="text" id="siteName" class="form-control" placeholder="Bookmark Name">
+                    </div>
+                    <div class="mb-4 col-12">
+                        <label for="siteUrl" class="form-label fw-bold"><i class="fa fa-link px-2"></i> Site URL</label>
+                        <input type="url" id="siteUrl" class="form-control" placeholder="Website URL" required>
+                        <div id="feedback">
+                           
+                        </div>
+                    </div>
+                    <button class="btn text-white" onclick="valid()">Submit</button>
+                </div>
+                <div class="break my-3"></div>
+                <table class="table table-striped table-white text-center">
+                    <thead>
+                      <tr>
+                        <th scope="col">Index</th>
+                        <th scope="col">Website Name</th>
+                        <th scope="col">Visit</th>
+                        <th scope="col">Delete</th>
+                      </tr>
+                    </thead>
+                    <tbody id="rowData">
+                        
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
